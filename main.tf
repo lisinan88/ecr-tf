@@ -1,5 +1,5 @@
 # Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0sadfs
+# SPDX-License-Identifier: MPL-2.0sadfsasdfasd
 
 provider "aws" {
   region = var.region
