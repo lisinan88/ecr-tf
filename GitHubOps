@@ -1,0 +1,15 @@
+# 更新本地仓库
+git pull origin main
+ 
+# 切换到目标分支
+git checkout main
+ 
+# 合并另一个分支到当前分支
+git merge feature-branch
+ 
+# 如果有冲突，解决它们，然后添加并提交
+git add .
+git commit -m "Merge feature-branch into main"
+ 
+# 推送到远程仓库
+git push origin main
