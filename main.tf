@@ -1,5 +1,9 @@
 # Copyright (c) HashiCorp, Inc.
+<<<<<<< HEAD
 # SPDX-License-Identifier: MPL-2.0asdfasdsadfsasdfasd
+=======
+# SPDX-License-Identifier: MPL-2.0111
+>>>>>>> dev
 
 provider "aws" {
   region = var.region
