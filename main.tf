@@ -25,7 +25,10 @@ resource "aws_instance" "ubuntu" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = var.instance_type
 
-  tags = {
-    Name = var.tags_name
-  }
+  tags = merge(
+    var.additional_tags,
+    {
+      Name = "MyVPCinstance"
+    },
+  )
 }
