@@ -15,4 +15,11 @@ variable "instance_name" {
   description = "EC2 instance name"
   default     = "Provisioned by Terraform"
 }
+variable "tags_name" {
+  description = "A map of tags to assign to the instance"
+  type = map(string)
+  default = {
+    Name = "Provisioned by Terraform list gavin"
+  }
+}
 

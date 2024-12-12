@@ -1,0 +1,7 @@
+
+#Outputs can be used to display resources properties in console after a run or are used for remote state lookups. 
+#This example below will output all outputs of the ec2 module for the app deployment
+
+#output "app_ec2" {
+#    value = module.app_ec2
+#}
