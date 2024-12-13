@@ -7,7 +7,7 @@ terraform {
     organization = "Org-China"
 
     workspaces {
-      name = "ecr-tf-a"
+      name = "ecr-tf"
     }
   }
 
