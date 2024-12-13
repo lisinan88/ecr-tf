@@ -6,9 +6,6 @@ terraform {
   cloud {
     organization = "Org-China"
 
-    workspaces {
-      name = "ecr-tf"
-    }
   }
 
   required_providers {
