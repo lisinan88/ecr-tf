@@ -23,6 +23,7 @@ variable "additional_tags" {
 
 module "vpc" {
   source  = "app.terraform.io/Org-China/vpc/aws"
+  version = "1.0.0"
 
   name = "my-vpc"
   cidr = "10.0.0.0/16"
