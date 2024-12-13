@@ -6,9 +6,6 @@ terraform {
   cloud {
     organization = "Org-China"
 
-    workspaces {
-      name = "learn-terraform"
-    }
   }
 
   required_providers {
@@ -20,3 +17,4 @@ terraform {
 
   required_version = "~> 1.2"
 }
+
