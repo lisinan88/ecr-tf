@@ -13,7 +13,7 @@ variable "instance_type" {
 
 variable "instance_name" {
   description = "EC2 instance name"
-  default     = "Provisioned by Terraformasad"
+  default     = "Provisioned by Terraformasadasdf"
 }
 variable "additional_tags" {
   default     = {}
