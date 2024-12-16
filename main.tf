@@ -32,3 +32,12 @@ resource "aws_instance" "ubuntu" {
     },
   )
 }
+module "web_server_sg" {
+  source  = "app.terraform.io/Org-China/security-group/aws"
+
+  name        = "web-server"
+  description = "Security group for web-server with HTTP ports open within VPC"
+  vpc_id      = var.vpc_id
+
+  ingress_cidr_blocks = ["10.10.0.0/16"]
+}
