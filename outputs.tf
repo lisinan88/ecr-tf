@@ -10,5 +10,8 @@ output "instance_arn" {
 }
 output "instance_type" {
   value = aws_instance.ubuntu.instance_type
-  
+}
+
+output "web_server_sg_id" {
+  value = web_server_sg.web_server.id
 }
