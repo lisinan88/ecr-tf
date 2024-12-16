@@ -13,5 +13,5 @@ output "instance_type" {
 }
 
 output "web_server_sg_id" {
-  value = web_server_sg.web_server.id
+  value = module.web_server_sg.security_group_id
 }
