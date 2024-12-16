@@ -54,7 +54,7 @@ module "web_server_sg" {
   ]
 }
 
-module "web_server_sg" {
+module "web_server_sg1" {
   source = "terraform-aws-modules/security-group/aws//modules/http-80"
 
   name        = "web-server"
