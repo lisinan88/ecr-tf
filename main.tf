@@ -24,6 +24,7 @@ data "aws_ami" "ubuntu" {
 resource "aws_instance" "ubuntu" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = var.instance_type
+  vpc_security_group_ids = [module.web_server_sg.security_group_id]
 
   tags = merge(
     var.additional_tags,
