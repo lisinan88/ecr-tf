@@ -20,7 +20,7 @@ variable "additional_tags" {
   description = "Additional resource tags"
   type        = map(string)
 }
-variable "vpc_id " {
+variable "vpc_id" {
   description = "VPC ID"
   default     = "vpc-0054c9cd0936a220d"
 }
