@@ -5,20 +5,11 @@ provider "aws" {
   region = var.region
 }
 
+
 data "aws_ami" "ubuntu" {
   most_recent = true
 
-  filter {
-    name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
-  }
-
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
-
-  owners = ["099720109477"] # Canonical11
+  arn = "arn:aws:ec2:cn-north-1:267384000844:image/ami-0961df99654269593"
 }
 
 resource "aws_instance" "ubuntu" {
