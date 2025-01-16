@@ -41,3 +41,28 @@ git checkout <commit-hash>
 
 git checkout tags/<tag-name>
 
+vscode快捷键
+# alt + shift + a 代码块注释
+# alt + shift + i 代码块取消注释
+# alt + shift + p 打开命令面板
+# alt + shift + f 格式化代码
+# alt + shift + j 代码块合并
+# alt + shift + k 代码块拆分
+# alt + shift + up 代码块上移
+# alt + shift + down 代码块下移
+# alt + shift + left 代码块左移
+# alt + shift + right 代码块右移
+# alt + shift + c 复制当前行到下一行
+# alt + shift + v 粘贴到当前行
+# alt + shift + x 剪切当前行
+# alt + shift + z 撤销
+# alt + shift + y 重做
+# alt + shift + w 关闭当前文件
+# alt + shift + e 打开文件资源管理器
+# alt + shift + o 打开文件
+# alt + shift + s 保存文件
+# alt + shift + f 格式化代码
+# alt + shift + p 打开命令面板
+# control tab 代码右移动一行
+# shift + tab 代码左移动一行
+# ctrl + / 单行注释
