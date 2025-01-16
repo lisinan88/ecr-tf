@@ -7,9 +7,13 @@ provider "aws" {
 
 
 data "aws_ami" "ubuntu" {
+
+  image_id = "ami-0961df99654269593"
+
   most_recent = true
 
-  arn = "arn:aws:ec2:cn-north-1:267384000844:image/ami-0961df99654269593"
+  owners = ["267384000844"] # Canonical
+  
 }
 
 resource "aws_instance" "ubuntu" {
