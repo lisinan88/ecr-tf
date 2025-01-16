@@ -18,6 +18,10 @@ provider "aws" {
 # control tab 代码右移动一行
 # shift + tab 代码左移动一行
 # ctrl + / 单行注释
+# ctrl + shift + / 多行注释
+# ctrl + shift + p 调出命令面板
+# 输入terraform fmt 格式化代码
+# 输入terraform validate 验证代码是否正确
 data "aws_ami" "ubuntu" {
   most_recent = true
 
