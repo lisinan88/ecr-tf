@@ -7,14 +7,15 @@ provider "aws" {
 
 
 data "aws_ami" "ubuntu" {
-
-  image_id = "ami-0961df99654269593"
-
   most_recent = true
 
-  owners = ["267384000844"] # Canonical
-  
+  owners = ["self"]
+  tags = {
+    Name   = "nginx-test"
+    Tested = "true"
+  }
 }
+
 
 resource "aws_instance" "ubuntu" {
   ami           = data.aws_ami.ubuntu.id
