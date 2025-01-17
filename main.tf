@@ -24,14 +24,14 @@ data "aws_ami" "ubuntu" {
   }
 }
 
-resource "aws_instance" "ubuntu" {
-  ami           = data.aws_ami.ubuntu.id
-  instance_type = var.instance_type
+# resource "aws_instance" "ubuntu" {
+#   ami           = data.aws_ami.ubuntu.id
+#   instance_type = var.instance_type
 
-  tags = merge(
-    var.additional_tags,
-    {
-      Name = "MyVPCinstance"
-    },
-  )
-}
+#   tags = merge(
+#     var.additional_tags,
+#     {
+#       Name = "MyVPCinstance"
+#     },
+#   )
+# }
